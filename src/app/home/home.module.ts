@@ -5,9 +5,20 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '@shared';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { MomentModule } from 'ngx-moment';
 
 @NgModule({
-  imports: [CommonModule, TranslateModule, SharedModule, HomeRoutingModule],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    SharedModule,
+    HomeRoutingModule,
+    MomentModule.forRoot({
+      relativeTimeThresholdOptions: {
+        m: 59,
+      },
+    }),
+  ],
   declarations: [HomeComponent],
 })
 export class HomeModule {}

@@ -17,6 +17,15 @@ export const environment = {
   serverUrl: '/api',
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US'],
+  firebaseConfig: {
+    apiKey: 'AIzaSyBxIeHt2Nl3YoDH1Oe4cP3n_jFoGJRlEoA',
+    authDomain: 'livestock-tracker-2b2f4.firebaseapp.com',
+    projectId: 'livestock-tracker-2b2f4',
+    storageBucket: 'livestock-tracker-2b2f4.appspot.com',
+    messagingSenderId: '1058499415377',
+    appId: '1:1058499415377:web:bacacbcdf83a24c5305770',
+    measurementId: 'G-6L0X3W452W',
+  },
 };
 
 /*
